@@ -1,0 +1,35 @@
+from tkinter import*
+import webbrowser
+import cx_Oracle
+def apple():
+  cheetah=text1.get()
+  lion=text2.get()
+  if cheetah =="ashwin" and lion =="cts":
+      print("Hai sir")
+      webbrowser.open("https://www.google.com/search?biw=1366&bih=657&tbm=isch&sa=1&ei=rNprXKmCH4iD8gXCt644&q=lion&oq=lion&gs_l=img.3..0i67j0j0i67l3j0j0i67j0j0i67j0.25609.31322..31724...2.0..0.138.2594.0j21......0....1..gws-wiz-img.....0..0i8i30j0i24j0i10i24.-YP-Ui97oBo#imgrc=S2oyudzKdNzQxM:")
+      open()
+  else:
+         print("Username or password in incorrect")
+
+def open():
+    jet = Tk()
+    jet.title("CTS")
+    jet.geometry("300x300")
+    jet.configure(background='green')
+
+cool=Tk()
+cool.title("CTS")
+cool.geometry("300x300")
+cool.configure(background='green')
+Label(cool,text="username",font=60,fg="black",bg="pink").grid(row=1,column=1)
+Label(cool,text="password",font=25,fg="black",bg="pink").grid(row=2,column=1)
+text1=Entry(cool,width=20,bg="red")
+text1.grid(row=1,column=2)
+text2=Entry(cool,width=20,bg="red")
+text2.grid(row=2,column=2)
+submit=Button(cool,width=10,text="submit",bg="violet",fg="yellow",font=20)
+e=Button(cool,width=10,text="submit",bg="orange",fg="brown",font=20,command=apple)
+e.grid(row=5,column=2)
+
+
+cool.mainloop()
